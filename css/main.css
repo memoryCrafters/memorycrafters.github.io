@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    height: 100px;
+}
+
+.logo {
+    height: 70px;
+    width: 100px;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.logo-text {
+    padding-left: 3x;
+    font-size: 16px;
+    color: #696969;
+}
+
+.navbar-right {
+    margin-left: auto;
+    text-align: center;
+}
+
+.nav-item {
+    padding-right: 2px;
+}
+
+#contact-btn {
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 10px;
+    background-color: #77ADDD;
+    border-color: #77ADDD;
+}
+
+#hero-app {
+    background-image: url("../img/photo-of-white-wall-1484759.jpg");
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app-hero {
+    margin: 80px;
+    width: 324px;
+    height: 524px;
+    z-index: 1;
+}
+
+#navbarColor03 {
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+.navbar-toggler {
+    border-color: #77ADDD;
+}
+
+#myVideo {
+    height: 86vh;
+    right: 0;
+    width: 100%;
+    opacity: 40%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hero-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-top: 3vh;
+    width: 80%;
+    border-radius: 10;
+    padding: 36px;
+}
+
+#carouselExampleIndicators {
+    margin-top: 20px;
+}
+
+.d-block {
+    width: 324px;
+    height: 524px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-right {
+        margin-right: 20px;
+    }
+    .nav-item {
+        padding-right: 14px;
+    }
+    
+    
+    
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
