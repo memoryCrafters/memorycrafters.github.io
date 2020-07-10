@@ -3,7 +3,9 @@ body {
     padding: none;
     font-family: 'Montserrat', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 nav {
     height: 90px;
 }
@@ -61,7 +63,13 @@ nav {
 
 .app-hero {
     width: 216px;
-    height: 349.16px;
+    height: 360.16px;
+    padding-bottom: 18px;
+}
+
+.app-hero-sm {
+    width: 180px;
+    height: 340px;
     padding-bottom: 18px;
 }
 
@@ -85,10 +93,41 @@ nav {
 }
 
 #lm-btn {
-    margin-top: 40px;
+    margin: 40px 0px;
     background-color: #77ADDD;
     border-color: #77ADDD;
 }
+
+#block-1 {
+    margin-top: 40px;
+}
+
+#main-1 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#img-1 {
+    position: absolute;
+    margin-left: 6em;
+}
+
+#img-2 {
+    z-index: -1;
+    margin-top: 18px;
+    margin-left: 11.5em;
+}
+
+.p-main-1 {
+    margin: 20px;
+    padding: 0px 40px;
+}
+
+.p-main-2 {
+    margin: 10px;
+    padding: 0px 40px;
+}
+
 
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -108,10 +147,13 @@ nav {
     .nav-item {
         padding-right: 14px;
     }
-    .hero-content {
-        width: 20%;
-    }
+
+    
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+    #hero-content {
+        width: 70%;
+    }
+ }
