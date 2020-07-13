@@ -1,18 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: none;
     font-family: 'Montserrat', sans-serif;
 }
-html {
-    scroll-behavior: smooth;
-  }
+
 nav {
     height: 90px;
 }
 
 .logo {
     height: 70px;
-    width: 100px;
+    width: 85px;
 }
 
 .navbar-brand {
@@ -68,14 +70,14 @@ nav {
 }
 
 .app-hero-sm {
-    width: 180px;
+    width: 190px;
     height: 340px;
     padding-bottom: 18px;
 }
 
 #myVideo {
     height: 44em;
-    right: 0;
+    right: 20px;
     width: 100%;
     opacity: 40%;
     position: absolute;
@@ -85,7 +87,7 @@ nav {
 
 #hero-content {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     margin-top: 2vh;
     width: 80%;
     border-radius: 14px;
@@ -103,19 +105,34 @@ nav {
 }
 
 #main-1 {
-    position: relative;
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
 #img-1 {
+    transform: translateX(-10%);
     position: absolute;
-    margin-left: 6em;
 }
 
 #img-2 {
+    transform: translateX(20%);;
+    position: relative;
     z-index: -1;
     margin-top: 18px;
-    margin-left: 11.5em;
+}
+
+#img-3 {
+    transform: translateX(10%);
+    position: absolute;
+
+}
+
+#img-4 {
+    transform: translateX(-20%);
+    position: relative;
+    z-index: -1;
+    margin-top: 18px;
 }
 
 .p-main-1 {
@@ -128,6 +145,19 @@ nav {
     padding: 0px 40px;
 }
 
+.p-main-3 {
+    margin: 10px;
+    padding: 0px 40px;
+}
+
+#footer {
+    margin-top: 40px;
+    overflow-x: hidden;
+}
+
+#inv-button {
+    font-size: 10px;
+}
 
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -147,7 +177,6 @@ nav {
     .nav-item {
         padding-right: 14px;
     }
-
     
  }
 
