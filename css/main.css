@@ -150,15 +150,20 @@ nav {
     padding: 0px 40px;
 }
 
+h4 {
+    line-height: 24px;
+}
+
 #footer {
-    margin-top: 40px;
+    margin: 40px 0px;
     overflow-x: hidden;
+
 }
 
-#inv-button {
-    font-size: 10px;
+#submit-button {
+    background-color: #77ADDD;
+    border-color: #77ADDD;
 }
-
 
 /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
@@ -167,7 +172,15 @@ nav {
 @media (min-width: 576px) { }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    h4 {
+        text-align: left;
+        margin: 20px;
+    }
+    .p-main-1 {
+        text-align: left;
+    }
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -177,7 +190,6 @@ nav {
     .nav-item {
         padding-right: 14px;
     }
-    
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
