@@ -1,5 +1,5 @@
 // Firebase configuration
-// Important: Removed configuration as repo is public
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -26,7 +26,6 @@ if (form) {
         evt.preventDefault();
         firebasePush(inputEmail);
         
-
         // Alert if everything runs.
         return alert('Data Successfully Sent to Database');
     })
