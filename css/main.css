@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    margin: 0px;
-    padding: none;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -95,13 +93,14 @@ nav {
 }
 
 #lm-btn {
-    margin: 40px 0px;
+    margin-top: 20px;
+    margin-bottom: 80px;
     background-color: #77ADDD;
     border-color: #77ADDD;
 }
 
 #block-1 {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #main-1 {
@@ -136,23 +135,25 @@ nav {
 }
 
 .p-main-1 {
-    margin: 20px;
-    padding: 0px 40px;
+    margin: 20px 40px;
 }
 
 .p-main-2 {
-    margin: 10px;
-    padding: 0px 40px;
+    margin: 10px 40px;
+    line-height: 12px;
 }
 
 h4 {
     line-height: 24px;
 }
 
+.footer-text {
+    margin-bottom: 18px;
+}
+
 #footer {
     margin: 40px 0px;
     overflow-x: hidden;
-
 }
 
 #submit-button {
@@ -164,16 +165,30 @@ h4 {
  No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+    .p-main-1 {
+        margin: 20px 100px;
+    }
+ }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     h4 {
         text-align: left;
-        margin: 20px;
     }
     .p-main-1 {
         text-align: left;
+        margin: 20px 0px;
+    }
+    #main-2, #main-3 {
+        margin-top: 40px;
+        padding-right: 60px;
+    }
+    #main-3 {
+        transform: translateX(14%);
+    }
+    #block-1 {
+        width: 90%;
     }
  }
 
@@ -185,11 +200,17 @@ h4 {
     .nav-item {
         padding-right: 14px;
     }
+    #block-1 {
+        width: 75%;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #hero-content {
         width: 70%;
+    }
+    #block-1 {
+        width: 60%;
     }
  }

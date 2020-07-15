@@ -1,5 +1,4 @@
-// Firebase configuration
-
+import { firebaseConfig } from './fbconfig.js';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -25,7 +24,7 @@ if (form) {
         location.reload();
         evt.preventDefault();
         firebasePush(inputEmail);
-        
+
         // Alert if everything runs.
         return alert('Data Successfully Sent to Database');
     })
