@@ -11,3 +11,8 @@ function preloadImages() {
 
 preloadImages("img/mC_favicon.JPG", "img/smartmockups_kcgjf0hg.jpg", "img/smartmockups_kbwarym5.png", "img/smartmockups_kbwaxz99.png", "img/smartmockups_kbwebwdr.png", "img/smartmockups_kby45upn.png");
 
+function smoothScroll(div, duration) {
+    var target = document.querySelector(div);
+    var position = target.getBoundingClientRectangle();
+    document.getElementById(div).scrollIntoView({ behavior: "smooth" });
+}
