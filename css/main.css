@@ -107,6 +107,12 @@ nav {
     margin-bottom: 80px;
     background-color: #77ADDD;
     border-color: #77ADDD;
+    display: none;
+}
+
+.placeholder {
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 #block-1 {
