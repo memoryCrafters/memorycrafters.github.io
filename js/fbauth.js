@@ -1,3 +1,6 @@
+// Todo: Enable Facebook/Phone authentication
+
+
 // FirebaseUI config.
 var uiConfig = {
     signInSuccessUrl: 'index.html',
@@ -21,8 +24,8 @@ const initApp = function () {
         if (user) {
             // User is signed in.
 
-            // Hide Sign-In button
-            document.getElementById('sign-in').style.display = 'none';
+            // Show Sign-out button
+            document.getElementById('sign-out').style.display = 'block';
 
             var displayName = user.displayName;
             var email = user.email;
@@ -52,10 +55,10 @@ const initApp = function () {
             welcome.innerHTML = `Welcome, ${displayName}`;
 
         } else {
-            // Hide Sign-Out button
-            const signOut = document.getElementById('sign-out');
-            if (signOut) {
-                signOut.style.display = 'none';
+            // Show Sign-in button
+            const signIn = document.getElementById('sign-in');
+            if (signIn) {
+                signIn.style.display = 'block';
             }
          
             // User is signed out.
