@@ -13,7 +13,7 @@ const inputEmail = form.querySelector('#inputEmail');
 
 // Function to push email to Firebase
 function firebasePush(Name, Email) {
-    //push itself
+    // Push to database
     var emailPush = firebase.database().ref('Emails').push().set(
         {
             Name: Name.value,
@@ -22,16 +22,24 @@ function firebasePush(Name, Email) {
     );
 }
 
-// Run function on submit
+// Run function when form is submitted
 if (form) {
     form.addEventListener('submit', function (evt) {
-        //location.reload();
-        //evt.preventDefault();
+        
+        evt.preventDefault();
         firebasePush(inputName, inputEmail);
+        form.reset();
 
-        // Alert if everything runs.
-        return alert('Success!');
+        const submitBtn = document.getElementById('submit-button');
+        submitBtn.style.backgroundColor = 'rgba(95, 175, 126, 0.9)';
+        submitBtn.style.borderRadius = '14px';
+        submitBtn.textContent = 'Success!';
+
+        setTimeout(function() {
+            submitBtn.style.backgroundColor = '#77ADDD';
+            submitBtn.textContent = 'Submit';
+            submitBtn.style.borderRadius = '0px';
+        }, 3000);
+        
     })
 }
-
-//// Firebase Auth ////
