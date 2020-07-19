@@ -149,8 +149,8 @@ nav {
 }
 
 .p-main-2 {
-    margin: 10px 40px;
-    line-height: 12px;
+    margin: 0px 28px;
+    line-height: 24px;
 }
 
 h4 {
@@ -158,6 +158,7 @@ h4 {
 }
 
 .footer-text {
+    margin-top: 12px;
     margin-bottom: 18px;
 }
 
