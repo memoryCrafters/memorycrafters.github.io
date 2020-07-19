@@ -35,13 +35,22 @@ nav {
     padding-right: 2px;
 }
 
-#contact-btn {
+#sign-in, #sign-out {
     border-radius: 6px;
     font-size: 14px;
     background-color: #77ADDD;
     border-color: #77ADDD;
-    margin: 4px 72px 0px 72px;
+    margin: 4px 36px 0px 36px;
     padding: 8px 24px;
+}
+
+#sign-out {
+    background-color: rgb(255, 221, 31);
+    border-color: rgb(255, 221, 31);
+}
+
+#welcome {
+    margin-top: 10px;
 }
 
 #navbarColor03 {

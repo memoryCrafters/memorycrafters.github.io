@@ -31,7 +31,7 @@
 <body>
   <!-- NavBar -->
   <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img class="logo" src="img/mC_favicon.JPG">
       <span class="logo-text">memoryCrafters</span>
     </a>
@@ -60,7 +60,11 @@
           </li>
           -->
           <li class="nav-item">
-            <a class="btn btn-primary" id="contact-btn" href='login.html'>Login</a>
+            <div class="logo-text" id="welcome"></div>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="sign-in" href='login.html'>Sign In</a>
+            <button type="submit" class="btn btn-primary" id="sign-out">Sign out</button>
           </li>
         </ul>
       </div>
@@ -184,7 +188,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
   <script type="module" src="js/firebase.js"></script>
-  <!-- <script type="module" src="js/fbauth.js"></script> -->
+  <script type="module" src="js/fbauth.js"></script>
 </body>
 
 </html>

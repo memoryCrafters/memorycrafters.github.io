@@ -3,7 +3,6 @@ import { firebaseConfig } from './fbconfig.js';
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
-const auth = firebase.auth(); 
 
 //// Email form ////
 
