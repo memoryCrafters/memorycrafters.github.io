@@ -36,11 +36,12 @@ nav {
 }
 
 #contact-btn {
-    margin-top: 5px;
     border-radius: 6px;
-    font-size: 10px;
+    font-size: 14px;
     background-color: #77ADDD;
     border-color: #77ADDD;
+    margin: 4px 72px 0px 72px;
+    padding: 8px 24px;
 }
 
 #navbarColor03 {

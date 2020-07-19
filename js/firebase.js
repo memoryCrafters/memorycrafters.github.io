@@ -2,7 +2,10 @@ import { firebaseConfig } from './fbconfig.js';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-var database = firebase.database();
+const database = firebase.database();
+const auth = firebase.auth(); 
+
+//// Email form ////
 
 // Select form and email input
 const form = document.querySelector('.form-inline');
@@ -28,7 +31,8 @@ if (form) {
         firebasePush(inputName, inputEmail);
 
         // Alert if everything runs.
-        return alert('Data Successfully Sent to Database');
+        return alert('Success!');
     })
 }
 
+//// Firebase Auth ////
