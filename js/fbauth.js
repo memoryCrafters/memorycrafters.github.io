@@ -60,7 +60,7 @@ const initApp = function () {
             if (signIn) {
                 signIn.style.display = 'block';
             }
-         
+            
             // User is signed out.
             //document.getElementById('sign-in-status').textContent = 'Signed out';
             //document.getElementById('sign-in').textContent = 'Sign in';
@@ -79,9 +79,10 @@ window.addEventListener('load', function () {
 const signOut = document.getElementById('sign-out');
 signOut.addEventListener('click', function () {
     firebase.auth().signOut().then(function () {
-        console.log('Signed Out');
+        signOut.style.display = 'none';
         location.reload();
     }, function (error) {
         console.error('Sign Out Error', error);
     });
 })
+
