@@ -1,5 +1,4 @@
-// Todo: Enable Facebook/Phone authentication
-
+// TODO: Enable Facebook/Phone authentication
 
 // FirebaseUI config.
 var uiConfig = {
@@ -18,12 +17,13 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
+var signedIn = null;
 
 const initApp = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             // User is signed in.
-
+           
             // Show Sign-out button
             document.getElementById('sign-out').style.display = 'block';
 
@@ -37,7 +37,7 @@ const initApp = function () {
             user.getIdToken().then(function (accessToken) {
                 //document.getElementById('sign-in-status').textContent = 'Signed in';
                 //document.getElementById('sign-out').textContent = 'Sign out';
-                /*document.getElementById('account-details').textContent = JSON.stringify({
+                /* document.getElementById('account-details').textContent = JSON.stringify({
                     displayName: displayName,
                     email: email,
                     emailVerified: emailVerified,
@@ -46,21 +46,28 @@ const initApp = function () {
                     uid: uid,
                     accessToken: accessToken,
                     providerData: providerData
-                }, null, '  ');
-                */
+                }, null, '  '); */
             });
+
+            var emailPush = firebase.database().ref('Emails').push().set(
+                {
+                    Name: displayName,
+                    Email: email
+                }
+            )
 
             // Welcome User
             const welcome = document.getElementById('welcome');
             welcome.innerHTML = `Welcome, ${displayName}`;
 
         } else {
+            
             // Show Sign-in button
             const signIn = document.getElementById('sign-in');
             if (signIn) {
                 signIn.style.display = 'block';
             }
-            
+
             // User is signed out.
             //document.getElementById('sign-in-status').textContent = 'Signed out';
             //document.getElementById('sign-in').textContent = 'Sign in';
@@ -77,12 +84,14 @@ window.addEventListener('load', function () {
 });
 
 const signOut = document.getElementById('sign-out');
-signOut.addEventListener('click', function () {
-    firebase.auth().signOut().then(function () {
-        signOut.style.display = 'none';
-        location.reload();
-    }, function (error) {
-        console.error('Sign Out Error', error);
-    });
-})
+if (signOut) {
+    signOut.addEventListener('click', function () {
+        firebase.auth().signOut().then(function () {
+            signOut.style.display = 'none';
+            location.reload();
+        }, function (error) {
+            console.error('Sign Out Error', error);
+        });
+    })
+};
 
