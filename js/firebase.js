@@ -2,6 +2,7 @@ import { firebaseConfig } from './fbconfig.js';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 //// Sign In / Create Account ////
 
@@ -36,9 +37,9 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.style.backgroundColor = '#77ADDD';
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
-                            //Go back to homepage
-                            location.href = "index.html";
-                        }, 3000);
+                            // Go back to homepage
+                            window.location = "/";
+                        }, 2000);
 
                         
 
@@ -103,10 +104,9 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.style.backgroundColor = '#77ADDD';
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
-                        }, 3000);
-
-                        // Go back to homepage
-                        // window.location.href = "/";
+                            // Go back to homepage
+                            window.location = "/";
+                        }, 2000);
 
                     })
 
