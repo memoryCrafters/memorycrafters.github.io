@@ -1,14 +1,17 @@
 // TODO: Enable Facebook/Phone authentication
 
+// Oauth //
+
 // FirebaseUI config.
 var uiConfig = {
-    signInSuccessUrl: 'index.html',
+    signInSuccessUrl: '/',
     signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+        //firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+        //firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
     ],
 };
 
@@ -17,15 +20,14 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
-var signedIn = null;
 
 const initApp = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             // User is signed in.
-           
+
             // Show Sign-out button
-            document.getElementById('sign-out').style.display = 'block';
+            document.getElementById('sign-out').style.display = 'inline';
 
             var displayName = user.displayName;
             var email = user.email;
@@ -34,10 +36,10 @@ const initApp = function () {
             var uid = user.uid;
             var phoneNumber = user.phoneNumber;
             var providerData = user.providerData;
-            user.getIdToken().then(function (accessToken) {
+            /* user.getIdToken().then(function (accessToken) {
                 //document.getElementById('sign-in-status').textContent = 'Signed in';
                 //document.getElementById('sign-out').textContent = 'Sign out';
-                /* document.getElementById('account-details').textContent = JSON.stringify({
+                document.getElementById('account-details').textContent = JSON.stringify({
                     displayName: displayName,
                     email: email,
                     emailVerified: emailVerified,
@@ -46,26 +48,21 @@ const initApp = function () {
                     uid: uid,
                     accessToken: accessToken,
                     providerData: providerData
-                }, null, '  '); */
-            });
-
-            var emailPush = firebase.database().ref('Emails').push().set(
-                {
-                    Name: displayName,
-                    Email: email
-                }
-            )
+                }, null, '  '); 
+            }); */
 
             // Welcome User
-            const welcome = document.getElementById('welcome');
-            welcome.innerHTML = `Welcome, ${displayName}`;
+            if (displayName != null) {
+                const welcome = document.getElementById('welcome');
+                welcome.innerHTML = `Welcome, ${displayName}`;
+            }
 
         } else {
-            
+
             // Show Sign-in button
             const signIn = document.getElementById('sign-in');
             if (signIn) {
-                signIn.style.display = 'block';
+                signIn.style.display = 'inline';
             }
 
             // User is signed out.
@@ -94,4 +91,3 @@ if (signOut) {
         });
     })
 };
-

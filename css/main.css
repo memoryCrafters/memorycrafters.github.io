@@ -35,7 +35,7 @@ nav {
     padding-right: 2px;
 }
 
-#sign-in, #sign-out {
+#sign-in, #sign-out, #create-act {
     border-radius: 6px;
     font-size: 14px;
     background-color: #77ADDD;
@@ -47,6 +47,10 @@ nav {
 #sign-out {
     background-color: rgb(255, 221, 31);
     border-color: rgb(255, 221, 31);
+}
+
+#create-act {
+    margin-bottom: 10px;
 }
 
 #welcome {
@@ -107,7 +111,6 @@ nav {
     margin-bottom: 80px;
     background-color: #77ADDD;
     border-color: #77ADDD;
-    display: none;
 }
 
 .placeholder {
@@ -180,6 +183,20 @@ h4 {
 .form-inline {
     max-width: 300px;
     margin-bottom: 20px;
+}
+
+#login-container {
+    border: 8px solid grey;
+    padding: 60px 20px;
+    width: 85%;
+}
+
+#login-text {
+   margin-bottom: 40px;
+}
+
+#error-message {
+    color: red;
 }
 
 /* Extra small devices (portrait phones, less than 576px)

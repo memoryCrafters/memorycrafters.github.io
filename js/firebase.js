@@ -2,74 +2,173 @@ import { firebaseConfig } from './fbconfig.js';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
 
-//// Email form ////
+//// Sign In / Create Account ////
 
-// Select form
-const form = document.querySelector('.form-inline');
+// Function to sign in / create account through Firebase
+function signIn(Cmnd, Email, Pswd) {
 
-// Function to push email to Firebase
-function firebasePush(Name, Email) {
-    // Push to database
-    database.ref('Emails').push().set(
-        {
-            Name: Name.value,
-            Email: Email.value
-        }
+    // Check if create account or sign up
+    switch (Cmnd) {
 
-    // Returns Promise
-    ).then(
+        case 'create':
 
-        // Success
-        function () {
-            console.log('Success!');
-            form.reset();
+            // Create user account
+            firebase.auth().createUserWithEmailAndPassword(Email, Pswd)
 
-            // Change button style when submitted
-            const submitBtn = document.getElementById('submit-button');
-            submitBtn.style.backgroundColor = 'rgba(95, 175, 126, 0.9)';
-            submitBtn.style.borderRadius = '14px';
-            submitBtn.textContent = 'Success!';
+                // Returns Promise
+                .then(
 
-            // TODO: make into function
-            setTimeout(function () {
-                submitBtn.style.backgroundColor = '#77ADDD';
-                submitBtn.textContent = 'Submit';
-                submitBtn.style.borderRadius = '0px';
-            }, 3000);
-        },
+                    // Success
+                    function () {
 
-        // Failure
-        function () {
-            console.log('Error sending data.')
-            form.reset();
+                        console.log('Success!');
+                        formCreate.reset();
 
-            // Change button style when submitted
-            const submitBtn = document.getElementById('submit-button');
-            submitBtn.style.backgroundColor = '#cc0000';
-            submitBtn.style.borderRadius = '14px';
-            submitBtn.textContent = 'Error';
+                        // Change button style when submitted
+                        const submitBtn = document.getElementById('submit-button');
+                        submitBtn.style.backgroundColor = 'rgba(95, 175, 126, 0.9)';
+                        submitBtn.style.borderRadius = '14px';
+                        submitBtn.textContent = 'Success!';
 
-            setTimeout(function () {
-                submitBtn.style.backgroundColor = '#77ADDD';
-                submitBtn.textContent = 'Submit';
-                submitBtn.style.borderRadius = '0px';
-            }, 3000);
-        });
+                        // TODO: make into function
+                        setTimeout(function () {
+                            submitBtn.style.backgroundColor = '#77ADDD';
+                            submitBtn.textContent = 'Submit';
+                            submitBtn.style.borderRadius = '0px';
+                            //Go back to homepage
+                            location.href = "index.html";
+                        }, 3000);
+
+                        
+
+                    })
+
+                // Catch error on failure
+                .catch(
+
+                    // Shows user the error
+                    error => {
+
+                        // Select error statement
+                        var errorMsg = document.getElementById('error-message');
+
+                        // Create variable for Error message content
+                        var msgContent = error.message;
+
+                        // Display error to user
+                        errorMsg.textContent = msgContent;
+
+                        console.log('Error creating account.');
+
+                        // Change button style when submitted
+                        const submitBtn = document.getElementById('submit-button');
+                        submitBtn.style.backgroundColor = '#cc0000';
+                        submitBtn.style.borderRadius = '14px';
+                        submitBtn.textContent = 'Error';
+
+                        setTimeout(function () {
+                            submitBtn.style.backgroundColor = '#77ADDD';
+                            submitBtn.textContent = 'Submit';
+                            submitBtn.style.borderRadius = '0px';
+                            errorMsg.textContent = '';
+                        }, 8000);
+
+                    }
+                );
+            break;
+
+        case 'signIn':
+
+            // Sign user in
+            firebase.auth().signInWithEmailAndPassword(Email, Pswd)
+
+                // Returns Promise
+                .then(
+
+                    // Success
+                    function () {
+
+                        console.log('Success!');
+                        formLogin.reset();
+
+                        // Change button style when submitted
+                        const submitBtn = document.getElementById('submit-button');
+                        submitBtn.style.backgroundColor = 'rgba(95, 175, 126, 0.9)';
+                        submitBtn.style.borderRadius = '14px';
+                        submitBtn.textContent = 'Success!';
+
+                        // TODO: make into function
+                        setTimeout(function () {
+                            submitBtn.style.backgroundColor = '#77ADDD';
+                            submitBtn.textContent = 'Submit';
+                            submitBtn.style.borderRadius = '0px';
+                        }, 3000);
+
+                        // Go back to homepage
+                        // window.location.href = "/";
+
+                    })
+
+                // Catch error on failure
+                .catch(
+
+                    // Shows user the error
+                    error => {
+
+                        // Select error statement
+                        var errorMsg = document.getElementById('error-message');
+
+                        // Create variable for Error message content
+                        var msgContent = error.message;
+
+                        // Display error to user
+                        errorMsg.textContent = msgContent;
+
+                        console.log('Error creating account.');
+
+                        // Change button style when submitted
+                        const submitBtn = document.getElementById('submit-button');
+                        submitBtn.style.backgroundColor = '#cc0000';
+                        submitBtn.style.borderRadius = '14px';
+                        submitBtn.textContent = 'Error';
+
+                        setTimeout(function () {
+                            submitBtn.style.backgroundColor = '#77ADDD';
+                            submitBtn.textContent = 'Submit';
+                            submitBtn.style.borderRadius = '0px';
+                            errorMsg.textContent = '';
+                        }, 8000);
+
+                    }
+                );
+            break;
+    };
 };
 
-// Run function when form is submitted
-if (form) {
-    // Select Name and Email from form
-    const inputName = form.querySelector('#inputName');
-    const inputEmail = form.querySelector('#inputEmail');
+// Select create account form
+const formCreate = document.getElementById('create');
+
+// Select login form
+const formLogin = document.getElementById('login');
+
+// Function for submitting login/createAccount form
+const auth = function (form, c) {
 
     form.addEventListener('submit', function (evt) {
 
         evt.preventDefault();
-        firebasePush(inputName, inputEmail);
-        form.reset();
+
+        // Select Name and Email from form
+        const inputEmail = form.querySelector('#inputEmail').value;
+        const inputPswd = form.querySelector('#inputPswd').value;
+
+        signIn(c, inputEmail, inputPswd);
 
     })
+
 };
+
+// Run function when form is submitted
+if (formLogin) { auth(formLogin, 'signIn') };
+if (formCreate) { auth(formCreate, 'create') };
