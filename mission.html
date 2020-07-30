@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>memoryCrafters LLC</title>
+    <meta name="description" content="Event planning, Reimagined.">
+    <meta name="author" content="EFC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/mC_favicon.png">
+    <!-- iOS Favicon -->
+    <link rel="apple-touch-icon" href="img/mC_favicon.JPG">
+    <!-- Bootstrap Default -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Cosmo Bootstrap Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css"
+        integrity="sha384-9/chHLTCcBULgxOFoUyZXSgEF0uFXs+NrQqzcy/DXqcR+Sk8C1l4EgmUXAEzTb92" crossorigin="anonymous">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Firebase UI -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fff">
+</head>
+
+<body>
+
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/mC_favicon.JPG">
+            <span class="logo-text">memoryCrafters</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor03">
+            <div class="navbar-right">
+                <ul class="navbar-nav">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Mission <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" id="contact-btn">Contact Us</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="logo-text" id="welcome"></div>
+                    </li>
+
+                    <!-- Removing for now
+                    <li class="nav-item">
+            
+                        <a class="btn btn-primary" id="sign-in" href='login.html' style="display:none">Sign In</a>
+                        <button type="submit" class="btn btn-primary" id="sign-out" style="display:none">Sign out</button>
+
+                    </li>
+                     -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background -->
+    <img id="m-img1" src="img/smartmockups_kcgj6wzn.jpg">
+
+    <!-- Main -->
+    <div class="container-fluid" id="m-hero">
+        <div class="text-center">
+            <h2>Our Mission</h2>
+            <p>memoryCrafters is dedicated to creating and reliving memories.</p>
+            <div class="row justify-content-center" id="m-images">
+                <img src="img/samantha-gades-fIHozNWfcvs-unsplash.jpg" id="m-img">
+                <img src="img/charles-deluvio-bXqOMf5tvDk-unsplash.jpg" id="m-img">
+                <img src="img/alasdair-elmes-ULHxWq8reao-unsplash.jpg" id="m-img">
+            </div>
+            <div id="m-text">
+                <p>Here at memoryCrafters, we understand the
+                    importance of connection.</p>
+                <p>Our goal is to simplify the process of connecting with friends, peers, and
+                    loved ones.
+                    Founded by two hardworking parents, we understand that connecting with loved ones and planning
+                    events is
+                    a rewarding experience, but can often be frustrating and time consuming. To solve this, we are
+                    dedicated
+                    to wroking hard behind the scenes so you can enjoy spending time with the people you love.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap js / jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/fbauth.js"></script>
+</body>

@@ -6,6 +6,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Navbar */
+
 nav {
     height: 90px;
 }
@@ -20,7 +22,7 @@ nav {
 }
 
 .logo-text {
-    padding-left: 3x;
+    margin-left: 8px;
     font-size: 16px;
     color: #696969;
 }
@@ -28,11 +30,18 @@ nav {
 .navbar-right {
     margin-left: auto;
     text-align: center;
-    font-weight: normal;
 }
 
 .nav-item {
-    padding-right: 2px;
+    margin-right: 0px;
+}
+
+#contact-btn {
+    margin-top: 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #77ADDD;
+    border-color: #77ADDD;
 }
 
 #sign-in, #sign-out, #create-act {
@@ -66,6 +75,10 @@ nav {
 .navbar-toggler {
     border-color: #77ADDD;
 }
+
+/*  */ 
+
+/* Home */
 
 #hero-app {
     background-image: url("../img/photo-of-white-wall-1484759.jpg");
@@ -185,6 +198,8 @@ h4 {
     margin-bottom: 20px;
 }
 
+/* Login */
+
 #login-container {
     border: 8px solid grey;
     padding: 60px 20px;
@@ -197,6 +212,38 @@ h4 {
 
 #error-message {
     color: red;
+}
+
+/*  */
+
+/* Mission */
+
+#m-img1 {
+    position: absolute;
+    right: 0px;
+    height: 90%;
+    width: 100%;
+    opacity: 40%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#m-hero {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 80%;
+    margin-top: 2%;
+    border-radius: 14px;
+}
+
+#m-img {
+    width: 250px;
+    object-fit: contain;
+    margin: 20px 10px;
+}
+
+#m-text {
+    padding: 10px 0px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -230,6 +277,9 @@ h4 {
     }
     #block-1 {
         width: 90%;
+    }
+    #m-text {
+        padding: 10px 15%;
     }
  }
 

@@ -44,12 +44,12 @@
       <div class="navbar-right">
         <ul class="navbar-nav">
 
-          <!--
+
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="mission.html">Mission</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">News</a>
@@ -60,18 +60,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
-          -->
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary" id="contact-btn">Contact Us</button>
+          </li>
+
 
           <li class="nav-item">
             <div class="logo-text" id="welcome"></div>
           </li>
+
+          <!-- Removing for now
           <li class="nav-item">
             
             <a class="btn btn-primary" id="sign-in" href='login.html' style="display:none">Sign In</a>
             <button type="submit" class="btn btn-primary" id="sign-out" style="display:none">Sign out</button>
 
           </li>
-
+          -->
         </ul>
       </div>
     </div>
@@ -87,7 +92,7 @@
     <img class="app-hero" src="img/smartmockups_kbwarym5.png" id="app-hero-1">
     <p>On our one-stop shop platform, you can find everything you need to celebrate your milestone.</p>
     <p>We are partnering with local businesses with virtual celebration capabilities during these tough times.</p>
-    </div>
+  </div>
   </div>
 
   <!-- Learn More -->
@@ -132,7 +137,7 @@
           On our platform, users will find everything they need from venues, themes, photographers, invitations, cakes,
           artists, decorations, recommendations, & more…
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -175,16 +180,16 @@
     -->
     <div class="row justify-content-center">
       <form class="form-inline d-flex">
-          <input type="First name" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName"
-              placeholder="Full Name" required>
-          <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
-              placeholder="Email" required>
-          <input type="submit" class="btn btn-primary mx-auto" id="submit-button">
+        <input type="First name" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName"
+          placeholder="Full Name" required>
+        <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Email"
+          required>
+        <input type="submit" class="btn btn-primary mx-auto" id="submit-button">
       </form>
-  </div>
+    </div>
   </div>
 
-  
+
 
   <!-- Bootstrap js / jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -211,6 +216,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
   <script type="module" src="js/firebase.js"></script>
   <script type="module" src="js/fbauth.js"></script>
+  <!-- Hubspot -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7577071.js"></script>
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 </body>
