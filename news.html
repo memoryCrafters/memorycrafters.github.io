@@ -47,14 +47,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mission.html">Mission <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mission.html">Mission</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Careers</a>
@@ -85,47 +85,28 @@
     </nav>
 
     <!-- Background -->
-    <img id="m-img1" src="img/smartmockups_kdas2w7y.jpg">
+    <img id="m-img1" style="height: 110%" src="img/smartmockups_kdaoqyms.jpg">
 
     <!-- Main -->
     <div class="container-fluid" id="hero-content">
-        <h2>Product Portfolio</h2>
-        <div class="row justify-content-center" id="products">
-
-            <!-- Card 1 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Milestone</h5>
-                    <img class="p-img" src="img/andrew-knechel-gG6yehL64fo-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">One stop shop marketplace solution for all your celebration needs.</p>
-                        <a class="btn btn-primary" href="milestone.html" id="submit-button">Demo</a>
-                    </div>
-                </div>
+        <div class="text-center">
+            <h3 class="mb-4">Newsletters</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <button class="btn btn-primary m-3" id="news-button1">July 2020</button>
+                <br>
+                <button class="btn btn-primary m-3" id="news-button2">June 2020</button>
+                <br>
+                <button class="btn btn-primary m-3 mb-4" id="news-button3">May 2020</button>
+                <br>
             </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Corporate</h5>
-                    <img class="p-img" src="img/muhammad-faiz-zulkeflee-alw-CwGFmwQ-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Engage and motivate employees with easy access to all things
-                            celebration.</p>
-                            <a class="btn btn-primary d-none d-sm-inline-block" href="corporate.html" id="submit-button">Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Re-live</h5>
-                    <img class="p-img" src="img/jon-tyson-P2aOvMMUJnY-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Reunion opportunities for global citizens.</p>
-                    </div>
-                    <div class="card-body">
+            <div class="col-lg-9">
+                <div class="d-none d-sm-block">
+                    <div class="embed-responsive embed-responsive-1by1" id="newswrapper">
+                        <iframe class="embed-responsive-item"
+                            src="https://drive.google.com/file/d/1XCa8DHH_UZv2nS2_vQ8LVBYk_v4Jce9-/preview"
+                            id="news"></iframe>
                     </div>
                 </div>
             </div>
@@ -145,6 +126,7 @@
 
     <!-- Main js -->
     <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
 
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
