@@ -47,20 +47,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mission.html">Mission</a>
+                        <a class="nav-link" href="mission.html">Mission <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html">Careers</a>
+                        <a class="nav-link" href="">Careers</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-primary" id="contact-btn">Contact Us</button>
@@ -85,47 +85,55 @@
     </nav>
 
     <!-- Background -->
-    <img id="p-img1" src="img/smartmockups_kdas2w7y.jpg">
+    <img id="m-img1" style="height: 140%" src="img/smartmockups_kdaoqyms.jpg">
 
     <!-- Main -->
     <div class="container-fluid" id="hero-content">
-        <h2>Product Portfolio</h2>
-        <div class="row justify-content-center" id="products">
 
-            <!-- Card 1 -->
-            <div class="col-lg-4">
+        <div class="text-center">
+            <h3>About Us</h3>
+            <div class="mb-4 w-75 mx-auto">Interested in working with memoryCrafters? Check out the job listings below
+                and email your resume and cover letter to: abhi@memory-crafters.com</div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- Co-Founders -->
+            <div class="col-lg-6">
                 <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Milestone</h5>
-                    <img class="p-img" src="img/andrew-knechel-gG6yehL64fo-unsplash.jpg" alt="Card image">
+                    <h5 class="card-header">Meet the Co-Founders</h5>
+                    <img class="p-img" src="img/" alt="Abhi & Poonam">
                     <div class="card-body">
-                        <p class="card-text">One stop shop marketplace solution for all your celebration needs.</p>
-                        <a class="btn btn-primary" href="milestone.html" id="submit-button">Demo</a>
+                        <p>We are the husband wife Co-Founders of memoryCrafters. We met at Wake Forest University, in
+                            beautiful North Carolina and are parents to a witty 6 year old & sassy 3 year old. The story
+                            of memoryCrafters began 5 years ago when we were planning our now 6 year old’s 1st birthday.
+                            The stress and struggle were real. We couldn’t wait to make life easy for us & parents like
+                            us. We want to celebrate our children at every opportunity. And we want to capture & immerse
+                            in these memories and remember those first steps, those toothless laughs. Every birthday our
+                            kids remind us of the beauty of parenthood - what it was and what it will be. With
+                            memoryCrafters our mission is to make celebrations easy and accessible for everyone. We want
+                            you to have the power to immerse in these memories when you choose. We would love for you to
+                            be a part of our story.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4">
+            <!-- Culture & Values -->
+            <div class="col-lg-6">
                 <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Corporate</h5>
-                    <img class="p-img" src="img/muhammad-faiz-zulkeflee-alw-CwGFmwQ-unsplash.jpg" alt="Card image">
+                    <h5 class="card-header">Culture & Values</h5>
+                    <img class="p-img" src="img/" alt="Culture & Values">
                     <div class="card-body">
-                        <p class="card-text">Engage and motivate employees with easy access to all things
-                            celebration.</p>
-                            <a class="btn btn-primary d-none d-sm-inline-block" href="corporate.html" id="submit-button">Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Re-live</h5>
-                    <img class="p-img" src="img/jon-tyson-P2aOvMMUJnY-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Reunion opportunities for global citizens.</p>
-                    </div>
-                    <div class="card-body">
+                        <p>memoryCrafters has a culture of
+                            hardworking and passionate individuals
+                            striving to help our customers create
+                            and re-live their greatest memories.
+                            We believe everyone deserves to have
+                            the celebration of their dreams, without
+                            compromise. Our employees are
+                            committed to creating a welcoming and
+                            inclusive work environment, as well as an 
+                           enjoyable experience for the customer. </p>
                     </div>
                 </div>
             </div>
@@ -145,6 +153,7 @@
 
     <!-- Main js -->
     <script src="js/main.js"></script>
+    <script src="js/careers.js"></script>
 
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -158,4 +167,5 @@
     <script type="module" src="js/firebase.js"></script>
     <script type="module" src="js/fbauth.js"></script>
 </body>
+
 </html>

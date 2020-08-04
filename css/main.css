@@ -72,8 +72,6 @@ nav {
     border-color: #77ADDD;
 }
 
-/*  */ 
-
 /* Home */
 
 #hero-app {
@@ -210,18 +208,20 @@ h4 {
     color: red;
 }
 
-/*  */
-
 /* Mission */
 
-#m-img1 {
+#m-img1, #p-img1 {
     position: absolute;
     right: 0px;
-    height: 90%;
+    height: 200%;
     width: 100%;
     opacity: 40%;
     object-fit: cover;
     z-index: -1;
+}
+
+#m-img1 {
+    height: 164%;
 }
 
 #m-img {
@@ -253,8 +253,21 @@ h4 {
 #news-button1, #news-button2, #news-button3 {
     background-color: #77ADDD;
     border-color: #77ADDD;
-    margin-right: auto;
 }
+
+#careers {
+    font-size: 18px;
+}
+
+#strategy, #communications, #productManagement, #software {
+    font-size: 14px;
+    background-color: #77ADDD;
+    border-color: #fff;
+    border-radius: 4px;
+}
+
+/* Backgrounds */
+
 
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -292,6 +305,9 @@ h4 {
     #m-text {
         padding: 10px 15%;
     }
+    #m-img1 {
+        height: 130%;
+    }
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -305,6 +321,9 @@ h4 {
     #block-1 {
         width: 75%;
     }
+    #p-img1 {
+        height: 90%;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -314,5 +333,8 @@ h4 {
     }
     #block-1 {
         width: 60%;
+    }
+    #m-img1 {
+        height: 90%;
     }
  }
