@@ -1,3 +1,3 @@
 # memorycrafters.github.io
 
-# memoryCrafters LLC
+memoryCrafters LLC
