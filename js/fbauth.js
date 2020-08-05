@@ -47,8 +47,8 @@ const initApp = function () {
                 }, null, '  '); 
             }); */
 
-            // Show and change Product Demos Inner HTML 
-            // to let signed in users access product demos
+            /* Show and change Product Demos Inner HTML 
+            to let signed in users access product demos */
 
             document.getElementById('demo-signIn').textContent = 'Demo our milestone and corporate products below.'
             document.getElementById('demos-wrapper').style.display = 'block';
