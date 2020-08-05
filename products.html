@@ -12,10 +12,7 @@
     <link rel="icon" href="img/mC_favicon.png">
     <!-- iOS Favicon -->
     <link rel="apple-touch-icon" href="img/mC_favicon.JPG">
-    <!-- Bootstrap Default -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Cosmo Bootstrap Theme -->
+    <!-- Bootstrap: Cosmo Theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css"
         integrity="sha384-9/chHLTCcBULgxOFoUyZXSgEF0uFXs+NrQqzcy/DXqcR+Sk8C1l4EgmUXAEzTb92" crossorigin="anonymous">
     <!-- Normalize CSS -->
@@ -62,13 +59,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+
+                    <!--
                     <li class="nav-item">
                         <button type="button" class="btn btn-primary" id="contact-btn">Contact Us</button>
                     </li>
+                    
 
                     <li class="nav-item">
                         <div class="logo-text" id="welcome"></div>
                     </li>
+
+                    -->
 
                     <!-- Removing for now
                     <li class="nav-item">
@@ -99,7 +101,6 @@
                     <img class="p-img" src="img/andrew-knechel-gG6yehL64fo-unsplash.jpg" alt="Card image">
                     <div class="card-body">
                         <p class="card-text">One stop shop marketplace solution for all your celebration needs.</p>
-                        <a class="btn btn-primary" href="milestone.html" id="submit-button">Demo</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +113,6 @@
                     <div class="card-body">
                         <p class="card-text">Engage and motivate employees with easy access to all things
                             celebration.</p>
-                            <a class="btn btn-primary d-none d-sm-inline-block" href="corporate.html" id="submit-button">Demo</a>
                     </div>
                 </div>
             </div>
@@ -130,6 +130,17 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid d-none d-md-block" id="hero-content">
+        <h3>Product Demos</h3>
+        <div class="mb-4" id="demo-signIn">Sign in to demo our milestone and corporate products.</div>
+        <div id="demos-wrapper" style="display: none">
+            <div class="mb-3" id="welcome"></div>
+            <div id="product-demos"></div>
+        </div>
+        <a class="btn btn-primary" id="sign-in" href='login.html' style="display:none">Sign In</a>
+        <button type="submit" class="btn btn-primary" id="sign-out" style="display:none">Sign out</button>
     </div>
 
     <!-- Bootstrap js / jQuery -->
@@ -158,4 +169,5 @@
     <script type="module" src="js/firebase.js"></script>
     <script type="module" src="js/fbauth.js"></script>
 </body>
+
 </html>

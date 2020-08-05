@@ -37,9 +37,9 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.style.backgroundColor = '#77ADDD';
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
-                            // Go back to homepage
-                            window.location = "/";
-                        }, 2000);
+                            // Go back to products page
+                            window.location = "/products.html";
+                        }, 1000);
 
                         
 
@@ -73,7 +73,7 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
                             errorMsg.textContent = '';
-                        }, 8000);
+                        }, 6000);
 
                     }
                 );
@@ -104,9 +104,9 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.style.backgroundColor = '#77ADDD';
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
-                            // Go back to homepage
-                            window.location = "/";
-                        }, 2000);
+                            // Go back to products page
+                            window.location = "/products.html";
+                        }, 1000);
 
                     })
 
@@ -138,7 +138,7 @@ function signIn(Cmnd, Email, Pswd) {
                             submitBtn.textContent = 'Submit';
                             submitBtn.style.borderRadius = '0px';
                             errorMsg.textContent = '';
-                        }, 8000);
+                        }, 6000);
 
                     }
                 );

@@ -1,10 +1,9 @@
-// TODO: Enable Facebook/Phone authentication
+// For the Product Demos Page //
 
-// Oauth //
-
+// OAuth //
 // FirebaseUI config.
 var uiConfig = {
-    signInSuccessUrl: '/',
+    signInSuccessUrl: '/products.html',
     signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -25,9 +24,6 @@ const initApp = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             // User is signed in.
-
-            // Show Sign-out button
-            document.getElementById('sign-out').style.display = 'inline';
 
             var displayName = user.displayName;
             var email = user.email;
@@ -51,18 +47,35 @@ const initApp = function () {
                 }, null, '  '); 
             }); */
 
+            // Show and change Product Demos Inner HTML 
+            // to let signed in users access product demos
+
+            document.getElementById('demo-signIn').textContent = 'Demo our milestone and corporate products below.'
+            document.getElementById('demos-wrapper').style.display = 'block';
+
             // Welcome User
             if (displayName != null) {
                 const welcome = document.getElementById('welcome');
-                welcome.innerHTML = `Welcome, ${displayName}`;
+                welcome.innerHTML = `
+                    <div>Welcome, ${displayName}</div>`;
             }
+
+            const demos = document.getElementById('product-demos');
+            demos.innerHTML = `
+                <div class="m-3 mt-4"><a class="btn btn-primary" href="milestone.html" id="submit-button">Milestone</a></div>
+                <div class="m-3"><a class="btn btn-primary" href="corporate.html" id="submit-button">Corporate</a></div>
+            `;
+
+            // Show Sign-out button
+            document.getElementById('sign-out').style.display = 'inline-block';
+
 
         } else {
 
             // Show Sign-in button
             const signIn = document.getElementById('sign-in');
             if (signIn) {
-                signIn.style.display = 'inline';
+                signIn.style.display = 'inline-block';
             }
 
             // User is signed out.
