@@ -107,7 +107,7 @@ nav {
     z-index: -1;
 }
 
-#hero-content {
+#hero-content, #about-content {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: 3vh;
@@ -213,20 +213,6 @@ h4 {
 
 /* Mission */
 
-#m-img1, #p-img1 {
-    position: absolute;
-    right: 0px;
-    height: 200%;
-    width: 100%;
-    opacity: 40%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-#m-img1 {
-    height: 164%;
-}
-
 #m-img {
     width: 250px;
     object-fit: contain;
@@ -240,7 +226,7 @@ h4 {
 
 /* Products */
 
-.p-img {
+.p-img, .a-img {
     height: 200px; 
     width: 100%; 
     object-fit: cover;
@@ -268,16 +254,46 @@ h4 {
     font-size: 18px;
 }
 
-#strategy, #communications, #productManagement, #software {
+#strategy, #communications, #productManagement, #softwareIntern, #softwareEngineer {
     font-size: 14px;
     background-color: #77ADDD;
     border-color: #fff;
     border-radius: 4px;
 }
 
+/* About */
+
+.a-img {
+    height: 300px;
+    object-fit: contain;
+}
+
 /* Backgrounds */
 
+#p-img1, #m-img1, #n-img1, #c-img1 {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    opacity: 40%;
+    object-fit: cover;
+    z-index: -1;
+}
 
+#p-img1 {
+    height: 200%;
+}
+
+#m-img1 {
+    height: 180%;
+}
+
+#n-img1 {
+    height: 110%;
+}
+
+#c-img1 {
+    height: 150%;
+}
 
 /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
@@ -290,10 +306,22 @@ h4 {
     .form-inline {
         max-width: none;
     }
+    #m-img1 {
+        height: 160%;
+    }
+    #n-img1 {
+        height: 130%;
+    }
+    #c-img1 {
+        height: 160%;
+    }
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .facebookLogo {
+        margin: 0px;
+    }
     h4 {
         text-align: left;
     }
@@ -315,13 +343,16 @@ h4 {
         padding: 10px 15%;
     }
     #m-img1 {
-        height: 130%;
+        height: 140%;
     }
     #p-img1 {
         height: 250%;
     }
-    .facebookLogo {
-        margin: 0px;
+    #n-img1 {
+        height: 150%;
+    }
+    #c-img1 {
+        height: 180%;
     }
  }
 
@@ -336,8 +367,17 @@ h4 {
     #block-1 {
         width: 75%;
     }
+    #m-img1 {
+        height: 130%;
+    }
     #p-img1 {
         height: 150%;
+    }
+    #n-img1 {
+        height: 120%;
+    }
+    #c-img1 {
+        height: 210%;
     }
  }
 
@@ -351,5 +391,14 @@ h4 {
     }
     #m-img1 {
         height: 90%;
+    }
+    #n-img1 {
+        height: 160%;
+    }
+    #c-img1 {
+        height: 160%;
+    }
+    #about-content {
+        width: 80%;
     }
  }
