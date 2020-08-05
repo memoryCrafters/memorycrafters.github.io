@@ -69,7 +69,7 @@ const initApp = function () {
             // Show Sign-out button
             document.getElementById('sign-out').style.display = 'inline-block';
 
-
+            
         } else {
 
             // Show Sign-in button
@@ -82,6 +82,13 @@ const initApp = function () {
             //document.getElementById('sign-in-status').textContent = 'Signed out';
             //document.getElementById('sign-in').textContent = 'Sign in';
             //document.getElementById('account-details').textContent = 'null';
+
+
+            // Milestone and Corporate Demo Pages //
+            // Hide demos if user accesses page without being signed in
+            document.getElementById('p-demo').innerHTML = `
+                <p>Please <a href="/login.html">Log in</a> to access product demos.</p>
+            `;
 
         }
     }, function (error) {

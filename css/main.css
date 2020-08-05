@@ -107,13 +107,21 @@ nav {
     z-index: -1;
 }
 
-#hero-content, #about-content {
+#hero-content, #career-content, #about-content {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: 3vh;
     width: 80%;
     border-radius: 14px;
     padding: 36px;
+}
+
+#career-content {
+    width: 90%;
+}
+
+#about-content {
+    width: 94%;
 }
 
 #lm-btn {
@@ -181,7 +189,8 @@ h4 {
 }
 
 #footer {
-    margin: 40px 0px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     overflow-x: hidden;
 }
 
@@ -292,7 +301,7 @@ h4 {
 }
 
 #c-img1 {
-    height: 150%;
+    height: 160%;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -313,7 +322,7 @@ h4 {
         height: 130%;
     }
     #c-img1 {
-        height: 160%;
+        height: 180%;
     }
  }
 
@@ -352,7 +361,7 @@ h4 {
         height: 150%;
     }
     #c-img1 {
-        height: 180%;
+        height: 210%;
     }
  }
 
@@ -377,7 +386,7 @@ h4 {
         height: 120%;
     }
     #c-img1 {
-        height: 210%;
+        height: 230%;
     }
  }
 
@@ -396,7 +405,7 @@ h4 {
         height: 160%;
     }
     #c-img1 {
-        height: 160%;
+        height: 170%;
     }
     #about-content {
         width: 80%;
