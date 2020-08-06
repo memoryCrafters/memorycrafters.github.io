@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Firebase UI -->
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <meta name="theme-color" content="#fff">
@@ -71,60 +71,61 @@
     </nav>
 
     <!-- Background -->
-    <img id="p-img1" src="img/smartmockups_kdas2w7y.jpg">
+    <img id="background" src="img/smartmockups_kdas2w7y.jpg">
 
     <!-- Main -->
-    <div class="container-fluid" id="hero-content">
-        <h2>Product Portfolio</h2>
-        <div class="row justify-content-center" id="products">
+    <div id="product-content">
+        <div class="container-fluid" id="hero-content">
+            <h2>Product Portfolio</h2>
+            <div class="row justify-content-center" id="products">
 
-            <!-- Card 1 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Milestone</h5>
-                    <img class="p-img" src="img/andrew-knechel-gG6yehL64fo-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">One stop shop marketplace solution for all your celebration needs.</p>
+                <!-- Card 1 -->
+                <div class="col-lg-4">
+                    <div class="card mt-3 mb-4">
+                        <h5 class="card-header">Milestone</h5>
+                        <img class="p-img" src="img/andrew-knechel-gG6yehL64fo-unsplash.jpg" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">One stop shop marketplace solution for all your celebration needs.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Corporate</h5>
-                    <img class="p-img" src="img/muhammad-faiz-zulkeflee-alw-CwGFmwQ-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Engage and motivate employees with easy access to all things
-                            celebration.</p>
+                <!-- Card 2 -->
+                <div class="col-lg-4">
+                    <div class="card mt-3 mb-4">
+                        <h5 class="card-header">Corporate</h5>
+                        <img class="p-img" src="img/muhammad-faiz-zulkeflee-alw-CwGFmwQ-unsplash.jpg" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Engage and motivate employees with easy access to all things
+                                celebration.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-lg-4">
-                <div class="card mt-3 mb-4">
-                    <h5 class="card-header">Re-live</h5>
-                    <img class="p-img" src="img/jon-tyson-P2aOvMMUJnY-unsplash.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Reunion opportunities for global citizens.</p>
-                    </div>
-                    <div class="card-body">
+                <!-- Card 3 -->
+                <div class="col-lg-4">
+                    <div class="card mt-3 mb-4">
+                        <h5 class="card-header">Re-live</h5>
+                        <img class="p-img" src="img/jon-tyson-P2aOvMMUJnY-unsplash.jpg" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Reunion opportunities for global citizens.</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid d-none d-md-block" id="hero-content">
-        <h3>Product Demos</h3>
-        <div class="mb-4" id="demo-signIn">Sign in to demo our milestone and corporate products.</div>
-        <div id="demos-wrapper" style="display: none">
-            <div class="mb-3" id="welcome"></div>
-            <div id="product-demos"></div>
+        <div class="container-fluid d-none d-md-block" id="hero-content">
+            <h3>Product Demos</h3>
+            <div class="mb-4" id="demo-signIn">Sign in to demo our milestone and corporate products.</div>
+            <div id="demos-wrapper" style="display: none">
+                <div class="mb-3" id="welcome"></div>
+                <div id="product-demos"></div>
+            </div>
+            <a class="btn btn-primary" id="sign-in" href='login.html' style="display:none">Sign In</a>
+            <button type="submit" class="btn btn-primary" id="sign-out" style="display:none">Sign out</button>
         </div>
-        <a class="btn btn-primary" id="sign-in" href='login.html' style="display:none">Sign In</a>
-        <button type="submit" class="btn btn-primary" id="sign-out" style="display:none">Sign out</button>
     </div>
 
     <!-- Bootstrap js / jQuery -->

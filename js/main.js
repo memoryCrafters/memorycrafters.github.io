@@ -1,10 +1,27 @@
-// Pre-load images for site optimization
-var images = new Array();
-function preloadImages() {
-    for (i = 0; i < preloadImages.arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preloadImages.arguments[i];
-    }
-}
-preloadImages("img/mC_favicon.JPG", "img/smartmockups_kcgjf0hg.jpg", "img/smartmockups_kbwarym5.png", "img/smartmockups_kbwaxz99.png", "img/smartmockups_kbwebwdr.png", "img/smartmockups_kby45upn.png");
+// Background height scales with size of main container
+const background = document.getElementById('background');
 
+// Mission and News page 
+var content = document.getElementById('hero-content');
+
+// Products page
+const productContent = document.getElementById('product-content');
+if (productContent) { content = productContent };
+
+// Careers page
+const careersContent = document.getElementById('career-content');
+if (careersContent) { content = careersContent };
+
+// About Page
+const aboutContent = document.getElementById('about-content');
+if (aboutContent) { content = aboutContent };
+
+// Initialize height after page finishes loading
+setTimeout(function () {
+    background.style.height = `${content.clientHeight + 120}px`
+}, 1000);
+
+// Change height on resize
+window.addEventListener('resize', function () {
+    background.style.height = `${content.clientHeight + 120}px`;
+});

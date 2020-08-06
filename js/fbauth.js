@@ -1,25 +1,5 @@
 // For the Product Demos Page //
 
-// OAuth //
-// FirebaseUI config.
-var uiConfig = {
-    signInSuccessUrl: '/products.html',
-    signInOptions: [
-        // Leave the lines as is for the providers you want to offer your users.
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-        //firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
-    ],
-};
-
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-
-// The start method will wait until the DOM is loaded.
-ui.start('#firebaseui-auth-container', uiConfig);
-
 const initApp = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -83,12 +63,14 @@ const initApp = function () {
             //document.getElementById('sign-in').textContent = 'Sign in';
             //document.getElementById('account-details').textContent = 'null';
 
-
             // Milestone and Corporate Demo Pages //
             // Hide demos if user accesses page without being signed in
-            document.getElementById('p-demo').innerHTML = `
+            const pDemo = document.getElementById('p-demo')
+            if (pDemo) {
+                pDemo.innerHTML = `
                 <p>Please <a href="/login.html">Log in</a> to access product demos.</p>
             `;
+            };
 
         }
     }, function (error) {
