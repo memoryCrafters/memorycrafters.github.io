@@ -69,10 +69,9 @@ nav {
 }
 
 .facebookLogo {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     border-radius: 10%;
-    margin: 10px 0px;
 }
 
 /* Home */
@@ -265,9 +264,17 @@ h4 {
 
 /* About */
 
-.a-img {
+.a-img, .adv-img {
     height: 300px;
     object-fit: contain;
+}
+
+.adv-img {
+    height: 240px;
+}
+
+#advisor-text {
+    font-size: 13px;
 }
 
 /* Background */
@@ -347,5 +354,6 @@ h4 {
     }
     #about-content {
         width: 80%;
+        padding: 36px 120px;
     }
  }
