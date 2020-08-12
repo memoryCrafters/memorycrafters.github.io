@@ -17,9 +17,9 @@ const aboutContent = document.getElementById('about-content');
 if (aboutContent) { content = aboutContent };
 
 // Initialize height after page finishes loading
-setTimeout(function () {
+document.addEventListener('DOMContentLoaded', function () {
     background.style.height = `${content.clientHeight + 120}px`
-}, 1000);
+});
 
 // Change height on resize
 window.addEventListener('resize', function () {
