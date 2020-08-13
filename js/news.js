@@ -12,13 +12,13 @@ var julyNews = {
 };
 
 var juneNews = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1XCa8DHH_UZv2nS2_vQ8LVBYk_v4Jce9-/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1XCa8DHH_UZv2nS2_vQ8LVBYk_v4Jce9-/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1qoGCmmHSquzcRhhKcgm1YNVbTNGnTNK0/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1qoGCmmHSquzcRhhKcgm1YNVbTNGnTNK0/view'
 };
 
 var mayNews = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1BzEBHmVSIuNhRkYbC-4gvWDv3djxgBsE/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1BzEBHmVSIuNhRkYbC-4gvWDv3djxgBsE/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1yRkE3Uxs21p9250iSLX2jGQ1IX3yMQbk/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1yRkE3Uxs21p9250iSLX2jGQ1IX3yMQbk/view'
 };
 
 // Function to hide embedded PDF on small devices (landscape/portrait phones)
