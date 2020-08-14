@@ -50,7 +50,7 @@ const btnFunction = function (element, listing) {
 // Hide embedded PDF if on small screen and instead pop-up preview. //
 
 // Initialize on page load
-if (window.innerWidth < 768) { newsWrapper.style.display = 'none' };
+if (window.innerWidth < 768) { careerWrapper.style.display = 'none' };
 
 btnFunction(strategy, businessListing);
 btnFunction(softwareEngineer, softwareEngineerListing);
