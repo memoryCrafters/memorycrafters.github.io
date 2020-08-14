@@ -45,6 +45,9 @@ const btnFunction = function (element, newsMonth) {
 // Initialize on page load
 if (window.innerWidth < 768) { newsWrapper.style.display = 'none' };
 
+// This is the newsletter that will initially display before any buttons are pressed
+newsWrapper.innerHTML = julyNews.iframe;
+
 btnFunction(july, julyNews);
 btnFunction(june, juneNews);
 btnFunction(may, mayNews);
