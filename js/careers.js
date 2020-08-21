@@ -1,9 +1,11 @@
 // Same as news-- Function to show embedded job listings
 
 const strategy = document.getElementById('strategy');
-const productManagement = document.getElementById('productManagement');
-const softwareIntern = document.getElementById('softwareIntern');
+const salesLeader = document.getElementById('salesLeader');
 const softwareEngineer = document.getElementById('softwareEngineer');
+const productManagement = document.getElementById('productManagement');
+const salesIntern = document.getElementById('salesIntern');
+const softwareIntern = document.getElementById('softwareIntern');
 
 const careerWrapper = document.getElementById('careerWrapper');
 
@@ -11,6 +13,11 @@ const careerWrapper = document.getElementById('careerWrapper');
 var businessListing = {
     iframe : '<iframe src="https://drive.google.com/file/d/1MckynBICJAKhaKZR9rr1EvauYmbWSo_m/preview"></iframe>',
     link : 'https://drive.google.com/file/d/1MckynBICJAKhaKZR9rr1EvauYmbWSo_m/view'
+};
+
+var salesLeaderListing = {
+    iframe : '<iframe src="https://drive.google.com/file/d/1OIxJSXxQTTES6RVe-Eke0V4hbbrnZm30/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1OIxJSXxQTTES6RVe-Eke0V4hbbrnZm30/view'
 };
 
 var softwareEngineerListing = {
@@ -23,6 +30,10 @@ var productInternListing = {
     link : 'https://drive.google.com/file/d/19QYTApE1xAflsPLKtGsNHHCiuZbDj9ck/view'
 };
 
+var salesInternListing = {
+    iframe : '<iframe src="https://drive.google.com/file/d/1ABFFnEC2G6fSsXezr4nfw4BGF5Kc0nAe/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1ABFFnEC2G6fSsXezr4nfw4BGF5Kc0nAe/view'
+};
 var softwareInternListing = {
     iframe : '<iframe src="https://drive.google.com/file/d/1PgrEN74S5pGfiS0NFBcvw2bKi6Vvnl4f/preview"></iframe>',
     link : 'https://drive.google.com/file/d/1PgrEN74S5pGfiS0NFBcvw2bKi6Vvnl4f/view'
@@ -47,22 +58,26 @@ const btnFunction = function (element, listing) {
 
 };
 
+function runListings() {
+
+    btnFunction(strategy, businessListing);
+    btnFunction(salesLeader, salesLeaderListing);
+    btnFunction(softwareEngineer, softwareEngineerListing);
+    btnFunction(productManagement, productInternListing);
+    btnFunction(salesIntern, salesInternListing);
+    btnFunction(softwareIntern, softwareInternListing);
+
+};
+
 // Hide embedded PDF if on small screen and instead pop-up preview. //
 
 // Initialize on page load
 if (window.innerWidth < 768) { careerWrapper.style.display = 'none' };
-
-btnFunction(strategy, businessListing);
-btnFunction(softwareEngineer, softwareEngineerListing);
-btnFunction(productManagement, productInternListing);
-btnFunction(softwareIntern, softwareInternListing);
+runListings();
 
 // When resizing 
 window.addEventListener('resize', function () {
 
-    btnFunction(strategy, businessListing);
-    btnFunction(softwareEngineer, softwareEngineerListing);
-    btnFunction(productManagement, productInternListing);
-    btnFunction(softwareIntern, softwareInternListing);
+    runListings();
 
 });
