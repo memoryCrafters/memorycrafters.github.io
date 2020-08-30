@@ -1,10 +1,16 @@
 // Function to show embedded newsletters with buttons
 
-const july = document.getElementById('news-button1');
+const august = document.getElementById('news-button4')
+const july = document.getElementById('news-button3');
 const june = document.getElementById('news-button2');
-const may = document.getElementById('news-button3');
+const may = document.getElementById('news-button1');
 
 const newsWrapper = document.getElementById('newswrapper');
+
+var augustNews = {
+    iframe : '<iframe src="https://drive.google.com/file/d/1gWlIphKL2HiLcA6Gvl2084rDTcc5myHs/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1gWlIphKL2HiLcA6Gvl2084rDTcc5myHs/view'
+};
 
 var julyNews = {
     iframe : '<iframe src="https://drive.google.com/file/d/19ZtZ9S9Vx_uYGdhoGOUuPLid3E1vTw-u/preview"></iframe>',
@@ -48,6 +54,7 @@ if (window.innerWidth < 768) { newsWrapper.style.display = 'none' };
 // This is the newsletter that will initially display before any buttons are pressed
 newsWrapper.innerHTML = julyNews.iframe;
 
+btnFunction(august, augustNews);
 btnFunction(july, julyNews);
 btnFunction(june, juneNews);
 btnFunction(may, mayNews);
@@ -55,6 +62,7 @@ btnFunction(may, mayNews);
 // When resizing 
 window.addEventListener('resize', function () {
 
+    btnFunction(august, augustNews);
     btnFunction(july, julyNews);
     btnFunction(june, juneNews);
     btnFunction(may, mayNews);
