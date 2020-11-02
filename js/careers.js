@@ -6,6 +6,7 @@ const softwareEngineer = document.getElementById('softwareEngineer');
 const productManagement = document.getElementById('productManagement');
 const salesIntern = document.getElementById('salesIntern');
 const softwareIntern = document.getElementById('softwareIntern');
+const digitalMarketingIntern = document.getElementById('digitalMarketingIntern')
 
 const careerWrapper = document.getElementById('careerWrapper');
 
@@ -40,6 +41,11 @@ var softwareInternListing = {
     link : 'https://drive.google.com/file/d/1PgrEN74S5pGfiS0NFBcvw2bKi6Vvnl4f/view'
 };
 
+var digitalMarketingInternListing = {
+    iframe: '<iframe src = "https://drive.google.com/file/d/1qOiBPQLk63xvW28o61Vwzy2yw0WDPebf/preview"></iframe>',
+    link: 'https://drive.google.com/file/d/1qOiBPQLk63xvW28o61Vwzy2yw0WDPebf/view'
+}
+
 // Function to hide embedded PDF on small devices (landscape/portrait phones)
 const btnFunction = function (element, listing) {
 
@@ -67,7 +73,7 @@ function runListings() {
     btnFunction(productManagement, productInternListing);
     btnFunction(salesIntern, salesInternListing);
     btnFunction(softwareIntern, softwareInternListing);
-
+    btnFunction(digitalMarketingIntern, digitalMarketingInternListing);
 };
 
 // Hide embedded PDF if on small screen and instead pop-up preview. //
