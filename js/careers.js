@@ -27,23 +27,23 @@ var softwareEngineerListing = {
 };
 
 var productInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/19QYTApE1xAflsPLKtGsNHHCiuZbDj9ck/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/19QYTApE1xAflsPLKtGsNHHCiuZbDj9ck/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/15lAeWGrYQfFsjmnLdI-4pid9tAxmFeIJ/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/15lAeWGrYQfFsjmnLdI-4pid9tAxmFeIJ/view'
 };
 
 var salesInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1ABFFnEC2G6fSsXezr4nfw4BGF5Kc0nAe/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1ABFFnEC2G6fSsXezr4nfw4BGF5Kc0nAe/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1arbDeAeV6wkt0ihYllEO97wVl53BDTjm/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1arbDeAeV6wkt0ihYllEO97wVl53BDTjm/view'
 };
 
 var softwareInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1PgrEN74S5pGfiS0NFBcvw2bKi6Vvnl4f/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1PgrEN74S5pGfiS0NFBcvw2bKi6Vvnl4f/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1pQq566bVi2mp8gI9MmU1JNcb6YHrQA1Z/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1pQq566bVi2mp8gI9MmU1JNcb6YHrQA1Z/view'
 };
 
 var digitalMarketingInternListing = {
-    iframe: '<iframe src = "https://drive.google.com/file/d/1qOiBPQLk63xvW28o61Vwzy2yw0WDPebf/preview"></iframe>',
-    link: 'https://drive.google.com/file/d/1qOiBPQLk63xvW28o61Vwzy2yw0WDPebf/view'
+    iframe: '<iframe src = "https://drive.google.com/file/d/1F8q0Ea11G1k91qQUopdDaAgm0eLa_qqL/preview"></iframe>',
+    link: 'https://drive.google.com/file/d/1F8q0Ea11G1k91qQUopdDaAgm0eLa_qqL/view'
 }
 
 // Function to hide embedded PDF on small devices (landscape/portrait phones)
