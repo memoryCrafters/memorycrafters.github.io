@@ -14,7 +14,7 @@ nav {
 
 .logo {
     height: 75px;
-    width: 90px;
+    width: 130px;
 }
 
 .navbar-brand {
@@ -186,6 +186,7 @@ h4 {
     margin-bottom: 80px;
     overflow-x: hidden;
 }
+
 
 #submit-button {
     background-color: #77ADDD;
