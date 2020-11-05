@@ -13,8 +13,8 @@ nav {
 }
 
 .logo {
-    height: 75px;
-    width: 130px;
+    height: 80px;
+    width: 95px;
 }
 
 .navbar-brand {
@@ -185,6 +185,11 @@ h4 {
     margin-top: 40px;
     margin-bottom: 80px;
     overflow-x: hidden;
+}
+
+#footer-logo {
+    width: 160px;
+    height: 80px;
 }
 
 
