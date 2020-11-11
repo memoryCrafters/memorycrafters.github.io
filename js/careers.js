@@ -32,13 +32,13 @@ var productInternListing = {
 };
 
 var salesInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1arbDeAeV6wkt0ihYllEO97wVl53BDTjm/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1arbDeAeV6wkt0ihYllEO97wVl53BDTjm/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1vCJ2Ea0fZNcQe93FGljQr2Pvqdlom5n_/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1vCJ2Ea0fZNcQe93FGljQr2Pvqdlom5n_/view'
 };
 
 var softwareInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/1pQq566bVi2mp8gI9MmU1JNcb6YHrQA1Z/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/1pQq566bVi2mp8gI9MmU1JNcb6YHrQA1Z/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1V9mZ9yWcU4tgofLLCyHc8G1AaAQ5qeoS/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1V9mZ9yWcU4tgofLLCyHc8G1AaAQ5qeoS/view'
 };
 
 var digitalMarketingInternListing = {
