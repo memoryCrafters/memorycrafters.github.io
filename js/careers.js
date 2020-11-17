@@ -27,8 +27,8 @@ var softwareEngineerListing = {
 };
 
 var productInternListing = {
-    iframe : '<iframe src="https://drive.google.com/file/d/15lAeWGrYQfFsjmnLdI-4pid9tAxmFeIJ/preview"></iframe>',
-    link : 'https://drive.google.com/file/d/15lAeWGrYQfFsjmnLdI-4pid9tAxmFeIJ/view'
+    iframe : '<iframe src="https://drive.google.com/file/d/1tzbHKfUzaMfEjvYxR75gXKRKEh5yLDN4/preview"></iframe>',
+    link : 'https://drive.google.com/file/d/1tzbHKfUzaMfEjvYxR75gXKRKEh5yLDN4/view'
 };
 
 var salesInternListing = {
